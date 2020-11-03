@@ -1,0 +1,16 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Upload {
+  id       String @id @default(cuid())
+  filename String
+  mimetype String
+  encoding String
+  path     String
+}

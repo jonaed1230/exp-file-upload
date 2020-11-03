@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  postgresql:
+    image: bitnami/postgresql:12.3.0
+    ports:
+      - ${POSTGRESQL_PORT}:5432
+    volumes:
+      - backend:/bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME=${POSTGRESQL_USERNAME}
+      - POSTGRESQL_PASSWORD=${POSTGRESQL_PASSWORD}
+      - POSTGRESQL_DATABASE=prisma2
+volumes: 
+  backend:
