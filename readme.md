@@ -1,6 +1,6 @@
 # file-upload
 
-This directory contains an example of a graphql-yoga server supporting file uploads.
+This directory contains an example of a graphql-yoga server supporting file uploads with prisma2.
 
 ## Get started
 
